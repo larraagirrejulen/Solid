@@ -24,7 +24,7 @@ public class Bill {
 		VAT = cvat.calculateVAT();
 		
 		// Totala kalkulatzen dugu
-		billTotal = (float) ((billAmount - billDeduction) + cvat.getValue());
+		billTotal = billAmount - billDeduction + VAT;
 	}
 	
 }
